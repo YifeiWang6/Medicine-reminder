@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e4f1f6; /* Soft blue background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add styles for side images */
+.side-image {
+    width: 100px; /* Set the image width */
+    height: auto; /* Keep the aspect ratio of the image */
+    position: absolute; /* Position the images absolutely within the body */
+}
+
+.side-image.left {
+    left: 15px; /* Distance from the left edge */
+}
+
+.clock-container {
+    width: 100%;
+    background-color: #e4f1f6;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 72px;
+    font-family:"Times New Roman", Times, serif; /* 改变字体格式 */
+    color: #333;
+    margin-bottom: 20px; /* Add space between clock and container */
+}
+
+.reminder-container, .reminder-table {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1; /* Make sure this layer is above the images */
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+input[type="text"], input[type="time"], input[type="number"], select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #009688; /* A soft green, associated with health */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+.reminders-list {
+    margin-top: 20px;
+}
+
+.reminder-entry {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reminder-info {
+    font-size: 16px;
+}

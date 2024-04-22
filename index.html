@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Clock Display -->
+    <div class="clock-container" id="clock"></div>
+
+ <!-- Left Image -->
+    <div class="side-image left">
+        <img src="images/robot1.jpg" alt="Left Side Image">
+    </div>
+
+    <div class="reminder-container">
+        <h1>Medication Reminder</h1>
+
+        <!-- Users and Medicines Input -->
+        <div id="usersMedicinesContainer">
+            <!-- User & medicine inputs will be added here by JavaScript -->
+        </div>
+
+        <!-- Add User & Medicine Button -->
+        <button id="addUserMedicineBtn">Add User & Medicine</button>
+
+        <!-- Set Reminder Button -->
+        <button id="setReminderBtn">Set Reminders</button>
+
+        <!-- Reminder Table -->
+        <div class="reminder-table">
+            <h2>Active Reminders</h2>
+            <div id="remindersList" class="reminders-list">
+                <!-- Reminder entries will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
